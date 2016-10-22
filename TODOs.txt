@@ -1,3 +1,0 @@
-//TODO Add ESLint
-//TODO Install Graphiql-Express
-//TODO Add React Component
