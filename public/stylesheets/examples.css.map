@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "examples.css",
+	"sources": [
+		"../../app/assets/sass/examples.scss",
+		"../../govuk_modules/govuk_frontend_toolkit/stylesheets/_colours.scss",
+		"../../govuk_modules/govuk_frontend_toolkit/stylesheets/colours/_palette.scss",
+		"../../govuk_modules/govuk_frontend_toolkit/stylesheets/colours/_organisation.scss"
+	],
+	"mappings": ";AAEA,AAAA,KAAK,CAAC;EACJ,WAAW,EAAE,iBAAkB;EAC/B,SAAS,EAAE,IAAK;EAChB,WAAW,EAAE,GAAI;EACjB,KAAK,EAAE,IAAK;EACZ,UAAU,EEIF,OAAO;EFHf,KAAK,EAAE,KAAM;EACb,MAAM,EAAE,MAAM,CE6CR,IAAI,CF7CY,GAAG;EACzB,OAAO,EAAE,GAAI;EACb,UAAU,EAAE,UAAW;CACxB;;AAED,0CAA0C;;AAC1C,AAAI,IAAA,AAAA,KAAK,CAAC;EACR,UAAU,EAAE,IAAK;CAClB;;;AACD,AAAA,mBAAmB,CAAC;EAClB,KAAK,EAAE,IAAK;EACZ,UAAU,EAAE,GAAI;CACjB",
+	"names": []
+}
