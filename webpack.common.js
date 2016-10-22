@@ -78,7 +78,7 @@ module.exports = {
             context: path.join(__dirname, 'app')
         }, {
             from: 'server',
-            to: 'server',
+            to: '../',
             context: path.join(__dirname, 'app')
         }, {
             from: 'fonts',

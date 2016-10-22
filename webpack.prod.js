@@ -10,8 +10,8 @@ module.exports = webpackMerge(commonConfig, {
     // devtool: 'source-map',
 
     output: {
-        path: path.join(process.cwd(), '/dist'),
-        // publicPath: '/',
+        path: path.join(process.cwd(), '/dist/public'),
+        //publicPath: '/public',
         filename: '[name].[hash].js'
     },
 
