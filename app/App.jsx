@@ -6,9 +6,11 @@ import { createHistory } from 'history'
 
 import Core from './components/Core/Core';
 import Home from './containers/Home';
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import dataApp from './reducers'
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import dataApp from './reducers';
+
+import Utils from './components/Utils/Utils';
 
 let store = createStore(dataApp, window.devToolsExtension && window.devToolsExtension())
 
