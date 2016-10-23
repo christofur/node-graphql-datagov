@@ -1,16 +1,17 @@
 import { connect } from 'react-redux';
-import GraphiQL from '../components/GraphiQL/GraphiQL'
+import GraphiQL from '../components/GraphiQL/GraphiQL';
 
 
-const mapStateToProps = (state) => {
-    return {
-        data: state
-    }
+const mapStateToProps = state => {
+  return {
+    data: state
+  };
 };
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-    }
+const mapDispatchToProps = dispatch => {
+  return {
+    dispatch
+  };
 };
 
 const Home = connect(
@@ -18,7 +19,7 @@ const Home = connect(
     mapDispatchToProps
 )(GraphiQL);
 
-export default Home
+export default Home;
 
 
 
