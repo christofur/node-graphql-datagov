@@ -4,7 +4,8 @@
   "description": "",
   "author": "",
   "scripts": {
-    "start": "npm run clean && webpack --config webpack.prod.js --progress --profile --bail && nodemon dist/server.js",
+    "start": "nodemon dist/server.js",
+    "watch": "webpack --config webpack.prod.js --progress --profile --bail --watch",
     "clean": "rimraf dist/",
     "build": "npm run clean && webpack --config webpack.prod.js --progress --profile --bail",
     "test": "echo \"Error: no test specified\" && exit 1"
