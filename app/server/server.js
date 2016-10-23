@@ -1,19 +1,32 @@
-var http = require('http');
-var express = require('express');
-var serveStatic = require('serve-static')
+/**
+ * Lib / Core dependencies
+ */
 
-const config = {
-  "port": 8080,
-  "bodyLimit": "100kb",
-};
+const http = require('http');
+const express = require('express');
+const serveStatic = require('serve-static');
+const path = require('path');
+const graphqlHTTP = require('express-graphql');
 
-var app = express();
+/**
+ * Project dependencies
+ */
+
+const graphqlSchema = require('./schema/graphQLSchema');
+const config = require('./config');
+
+const app = express();
 app.server = http.createServer(app);
 
 app.use(express.static('public'));
-app.use(serveStatic(__dirname + '/public'));
+app.use(serveStatic(path.join(__dirname, '/public')));
 
-app.get('/v2', function(req, res){
+app.use('/graphql', graphqlHTTP({
+  schema: graphqlSchema,
+  graphiql: true
+}));
+
+app.get('/', function (req, res) {
   res.sendFile('public/index.html', { root: __dirname });
 });
 
