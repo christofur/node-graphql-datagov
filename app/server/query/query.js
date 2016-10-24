@@ -13,7 +13,12 @@ const query = new GraphQL.GraphQLObjectType({
         }
       },
       resolve(root, args) {
-        return Db.tags.byText(args);
+        return new Promise(function(resolve){
+          Db.tags.byText(args)
+          .then(function(data) {
+            resolve(data);
+          });
+        });
       }
     }
   }
