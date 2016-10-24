@@ -1,10 +1,11 @@
 const _ = require('lodash');
 const fetch = require('node-fetch');
+const config = require('../config');
 
 const tags = {
   all: () => {
     return new Promise(function (resolve) {
-      fetch('https://data.gov.uk/api/3/action/tag_list')
+      fetch(config.apiTag)
       .then(function (res) {
         return res.json();
       }).then(function (json) {
